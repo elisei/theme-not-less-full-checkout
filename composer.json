@@ -1,0 +1,22 @@
+{
+    "name": "o2ti/theme-not-less-full-checkout",
+    "description": "Theme for Full Checkout module in not less stores",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Bruno Elisei",
+            "email": "brunoelisei@o2ti.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "O2TI\\MoipNotLess\\": ""
+        }
+    }
+}

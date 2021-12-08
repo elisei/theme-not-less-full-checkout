@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2019 O2TI. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <head>
+        <css src="O2TI_ThemeNotLessFullCheckout::css/full-checkout.css"/>
+        <css src="O2TI_ThemeNotLessFullCheckout::css/full-checkout-l.css" media="screen and (min-width: 768px)"/>
+    </head>
+    <referenceBlock name="breadcrumbs" remove="true" />
+    <referenceBlock name="page.main.title" remove="true" />
+    <referenceContainer name="page.wrapper">
+        <container name="header.container" as="header_container" label="Page Header Container"  htmlTag="header" htmlClass="page-header" before="main.content"/>
+        <container name="page.top" as="page_top" label="After Page Header" before="header.container"/>
+        <container name="footer-container" as="footer" after="-" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer" />
+    </referenceContainer>
+    <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+        <container name="columns" htmlTag="div" htmlClass="columns">
+            <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+        </container>
+    </container>
+</layout>
